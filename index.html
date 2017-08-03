@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SignUp/Login</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body onload="localStorage.removeItem('userNumber',k);">
+	<div class="first">
+		<div class="second">
+			<div class="second1">
+				<a href="https://www.facebook.com" target="_blank"> <button class="facebook"><img src="pictures/facebook.png" alt="facebook" height="30px" width="30px" align="middle"><span class="fbIcon">Facebook</span></button>					</a>
+				<a href="https://www.twitter.com/login" target="_blank"> <button class="Twitter"><img src="pictures/twitter.png" alt="twitter" height="30px" width="30px" align="middle"><span class="twIcon">Twitter</span></button> </a>
+			</div>
+			<div class="second2">
+				<!--<form action="">-->
+					<span>	<input size="20" type="text" id="fname" placeholder="Firsr Name" required="required">
+                    <input size="20" type="text" id="lname" placeholder="Last Name" required="required"> </span>
+					<input size="48" type="email" id="uemail" placeholder="Email Address" required="required"> 
+					<input size="48" type="password" id="upass" placeholder="Set Password" required="required"> 
+					<input size="30" type="number" id="uage" placeholder="Set Your Age" required="required">
+		<span id="gender">  
+       <span class="gender1"> Gender:</span><input class="male" type="radio" name="gender" value="male">Male
+			<input class="female" type="radio" name="gender" value="female">Female 
+            </span>
+   <!--</form> -->
+   </br> 
+					<!--<span style="color:#bdbdbd;">DOB:</span> <input type="date" id="udate" required="required">-->
+					<button class="submit_1" size="40" onclick="MySignUp();">SIGN UP</button>
+			</div>
+		</div>
+		
+		<div class="third">
+			<h1>Login</h1>
+			<!--<form action=""> -->
+                <input size="30" type="email" placeholder="Enter Your Email" id="uemail1" required="required"> 
+				<input size="30" type="password" placeholder="Enter Your Password" id="upass1" required="required">
+				<button class="submit" onclick="MySignIn();">LOGIN</button>
+			<!--</form>-->
+			<div class="four">
+				<a class="delete" href="javascript:void(0)" onclick="deleteAllAccounts();">&#215; Want To Delete All Accounts?</a> </br>
+				<a class="delete" href="javascript:void(0)" onclick="deleteAccount();">&#215; Want To Delete Specific Account?</a>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>

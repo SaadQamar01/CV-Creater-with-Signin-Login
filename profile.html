@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<meta charset="UTF-8">
+	<title>Profile</title>
+	<link rel="stylesheet" href="profile.css">
+</head>
+
+<body onload="data();">
+	<div class="header"> 
+        <img src="pictures/cover.jpg" alt="cover" height="400px" width="1200px">
+		<div class="dp">
+			<img id="dp1" height="220px" width="220px" src="pictures/dp.png" alt="Profile Picture">
+		</div>
+              <a href="index.html"><button>LOG OUT</button></a>  
+                      <span>  <input class="pic" type="file" title="Profile Picture" onchange="profilePic()" > </span>
+		<div class="name">
+			<span id="fullName">User Name</span>    
+        </div> 
+	</div>
+	<div class="lineBar">
+		<ul class="list">
+			<li> <a href="#">Home  </a> </li>
+			<li> <a href="#">Profile </a> </li>
+			<li> <a href="#">Contact </a> </li>
+			<li> <a href="#">About </a> </li>
+		</ul>
+	</div>
+            	<!--<h2>Welcome To Your Personalized Applicant Area</h2>-->
+<div class="container">
+		<!--<h2>Create Professional Resume</h2>  	-->
+       <div class="applicantInfo">
+    <div class="center">   
+			<h1>Applicant Info</h1>
+			<b>Applicant ID :</b> </br>
+			</br>
+			<b>Applicant Email :</b> </br>
+			</br>
+			<b>Applicant Age :</b> </br>
+			</br>
+			<b>Applicant Gender :</b>
+			<div class="applicantInfoContent">
+        		<span id="applicantID"></span></br>
+				</br>
+				<span id="applicantEmail"></span></br>
+				</br>
+				<span id="applicantAge"></span></br>
+				</br>
+				</b><span id="applicantGender"></span>
+			</div>
+            </div>
+	</div>
+	<div class="basicInfo">
+	<div class="center1"> 
+    	<h1>Personal Info</h1>
+		<b>Father’s Name :</b></br>
+		</br>
+		</br>
+		<b>Marital Status :</b></br>
+		</br>
+		</br>
+		<b>CNIC No :</b></br>
+		</br>
+		</br>
+		<b>Religion :</b></br>
+		</br>
+		</br>
+		<b>Phone No :</b></br>
+		</br>
+		</br>
+		<b>Language :</b></br>
+		</br>
+		</br>
+    <div class="basicInfoContent">
+			<div id="hide1">
+				<input id="fName" type="text">
+				<input id="mStatus" type="text">
+				<input id="cnic" type="number">
+				<input id="religion" type="text">
+				<input id="phone" type="number">
+				<input id="language" type="text">
+			</div>
+			<span id="setfName"></span></br>
+			</br>
+			</br>
+			<span id="setmStatus"></span></br>
+			</br>
+			</br>
+			<span id="setcnic"></span></br>
+			</br>
+			</br>
+			<span id="setreligion"></span></br>
+			</br>
+			</br>
+			<span id="setPhNo"></span></br>
+			</br>
+			</br>
+			<span id="setlanguage"></span></br>
+			</br>
+			</br>
+    </div>	</div>
+		<button onclick="personalInfo();">Save</button>
+		<button onclick="edit();">Edit</button>
+	</div>
+	<div class="EQ">
+        <div class="center3"> 
+		<h1>Educational Qualification</h1>
+		<b>Institute Name:</b></br>
+		</br>
+		</br>
+		<b>Level Of Education :</b></br>
+		</br>
+		</br>
+		<b>Field Of Study :</b></br>
+		</br>
+		</br>
+		<b>Marks Scored :</b></br>
+		</br>
+		</br>
+		<b>Passing Year :</b></br>
+		</br>
+		</br>
+    <div class="EQContent">
+			<div id="hide2">
+				<input id="IN" type="text">
+				<input id="LOE" type="text">
+				<input id="FOS" type="text">
+				<input id="MS" type="number">
+				<input id="PY" type="number">
+			</div>
+			<span id="setIN"></span></br>
+			</br>
+			</br>
+			<span id="setLOE"></span></br>
+			</br>
+			</br>
+			<span id="setFOS"></span></br>
+			</br>
+			</br>
+			<span id="setMS"></span></br>
+			</br>
+			</br>
+			<span id="setPY"></span></br>
+			</br>
+			</br>
+	</div></div>
+		<button onclick="qualificationInfo();">Save</button>
+		<button onclick="edit1();">Edit</button>
+</div>
+
+<div class="certification">
+    <div class="center4">
+		<h1>Certification And Academic Education </h1>
+		<b>Institute Name:</b></br>
+		</br>
+		</br>
+		<b>Field Of Study :</b></br>
+		</br>
+		</br>
+		<b>Duration :</b></br>
+		</br>
+		</br>
+        <b>Work Experience :</b></br>
+		</br>
+		</br>
+    <div class="cerContent">
+			<div id="hide3">
+				<input id="IName" type="text">
+				<input id="FOStudy" type="text">
+				<input id="Duration" type="number">
+				<input id="WE" type="number">
+			</div>
+			<span id="setIName"></span></br>
+			</br>
+			</br>
+			<span id="setFOStudy"></span></br>
+			</br>
+			</br>
+			<span id="setDuration"></span></br>
+			</br>
+			</br>
+            <span id="setWE"></span></br>
+			</br>
+			</br>
+	</div></div>
+		<button onclick="certificationInfo();">Save</button>
+		<button onclick="edit2();">Edit</button>
+</div>
+
+	<div class="skills">
+		<h1>Computer Skills and Other Abilities </h1>
+    <b>	Skills And Abilities  : </b> <input type="text" id="skill">
+        <button onclick="skills();">ADD</button>
+       <div> <ul id="skills"></ul><span id="close"></span> </div>
+	</div>
+
+
+	<div class="Portfolio">
+		<h1>Please provide us details of your portfolio </h1>
+    <b>	portfolio URL : </b> <input type="url" id="portfolio"><button onclick="portfolio();">ADD</button>
+       <div> <ul id="allPortfolio"></ul></div>
+	</div>
+</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
